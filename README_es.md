@@ -1,4 +1,4 @@
-# 🚀 Libft Tester Suite
+# 🚀 Libft Tester
 
 Este repositorio contiene una **suite de pruebas** diseñada para validar cada función de la **Libft** (Tu primera librería) del currículo 42.
 
@@ -90,3 +90,17 @@ Después de compilar y enlazar, ejecuta el programa de tests generado:
 ```
 
 ---
+
+## 🤝 Contribuciones (Reporting Issues)
+¡Las contribuciones son bienvenidas y son cruciales para mejorar la calidad de esta suite de tests!
+Si encuentras cualquiera de los siguientes problemas, por favor, **abre un *issue*** en este repositorio:
+1.  **Fallo Falso (*False Negative*):** Si crees que la función testeada funciona correctamente, pero el test marca un **FAIL**.
+2.  **Fallo Perdido (*False Positive*):** Si sabes que tu función tiene un *bug*, pero el test marca **PASS** (significa que falta un caso de prueba).
+3.  **Errores en los Tests:** Si encuentras algún error en la sintaxis, la lógica o la compilación del código del *tester* en sí.
+
+---
+
+### ¿Cómo contribuir?
+1.  **Reportar un Issue:** Abre una nueva pestaña de *Issues* en GitHub y describe el error encontrado, incluyendo el **caso de prueba exacto** que está fallando o que falta.
+2.  **Enviar un Pull Request (Opcional):** Si has creado un nuevo test para solucionar el problema, puedes enviar directamente un *Pull Request* para que lo revisemos e integremos.
+**Tu colaboración asegura que esta suite de tests sea lo más robusta y completa posible para toda la comunidad.**
