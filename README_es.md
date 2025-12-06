@@ -48,23 +48,45 @@ Si la parte obligatoria es perfecta, esta sección prueba la manipulación de la
 * **Iteración y Mapeo:** `ft_lstiter`, `ft_lstmap`
 
 ---
-
 ## ⚙️ Uso e Integración
 
 ### 1. Requisitos
 
-Asegúrate de que tu `ft_printf` esté compilada en un archivo llamado **`libftprintf.a`** y que su prototipo esté disponible en un archivo de cabecera llamado **`ft_printf.h`**. Ambos archivos deben estar ubicados en el **directorio raíz** de este repositorio de tests.
+Asegúrate de que tus funciones **estén** compiladas en un archivo llamado **`libft.a`** y que su prototipo esté disponible en un archivo de cabecera llamado **`libft.h`**. Ambos archivos deben estar ubicados en el **directorio raíz** de este repositorio de tests.
 
 ### 2. Compilación y Enlazado (Linking)
 
 #### 2.1. Preparación de la Librería
 
-Asegúrate de haber ejecutado previamente el comando `make` en tu repositorio de `ft_printf` para generar el archivo **`libftprintf.a`**.
+Asegúrate de haber ejecutado previamente el comando `make` en tu repositorio de `libft` para generar el archivo **`libft.a`**.
 
 #### 2.2. Enlazado de los Tests
 
-Una vez que tengas `libftprintf.a` lista, puedes compilar el archivo de pruebas y **enlazarlo** con tu librería usando el siguiente comando:
+Una vez que tengas `libft.a` lista, puedes compilar el archivo de pruebas y **enlazarlo** con tu librería usando el siguiente comando:
 
 ```bash
-cc nombre_del_test.c -L. -lftprintf -o test_runner
+cc nombre_del_test.c -L. -lft -o test_runner
 ```
+
+**⚠️ Sustituye** `nombre_del_test.c` por el nombre del archivo de prueba que desees ejecutar (ej: `test_atoi.c`).
+---
+
+## 💡 Explicación del Enlazado
+
+El uso de las banderas `-L` y `-l` es crucial para evitar el error `undefined reference to 'ft_printf'`.
+
+| Bandera | Propósito | Explicación |
+| :--- | :--- | :--- |
+| **`-L.`** | Ruta de Librería | Indica al enlazador que busque librerías estáticas en el **directorio actual** (`.`). |
+| **`-lft`** | Nombre de Librería | Le dice al enlazador que busque un archivo llamado **`libft.a`** dentro de las rutas especificadas. |
+
+---
+
+### 3. Ejecución de la Suite
+
+Después de compilar y enlazar, ejecuta el programa de tests generado:
+```bash
+./test_runner
+```
+
+---
