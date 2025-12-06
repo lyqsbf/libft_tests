@@ -72,9 +72,6 @@ cc nombre_del_test.c -L. -lft -o test_runner
 ---
 
 ## 💡 Explicación del Enlazado
-
-El uso de las banderas `-L` y `-l` es crucial para evitar el error `undefined reference to 'ft_printf'`.
-
 | Bandera | Propósito | Explicación |
 | :--- | :--- | :--- |
 | **`-L.`** | Ruta de Librería | Indica al enlazador que busque librerías estáticas en el **directorio actual** (`.`). |
