@@ -1,8 +1,8 @@
 # 🚀 Libft Tester Suite
 
-[cite_start]Este repositorio contiene una **suite de pruebas integral y exhaustiva** diseñada para validar cada función de la **Libft** (Tu primera librería) [cite: 1] del currículo 42.
+Este repositorio contiene una **suite de pruebas integral y exhaustiva** diseñada para validar cada función de la **Libft** (Tu primera librería) del currículo 42.
 
-[cite_start]El objetivo principal es asegurar que cada implementación (`ft_strlen`, `ft_calloc`, `ft_split`, etc.) se comporte de manera idéntica a su función original de la `libc` o cumpla estrictamente con las especificaciones del proyecto[cite: 55, 56].
+El objetivo principal es asegurar que cada implementación (`ft_strlen`, `ft_calloc`, `ft_split`, etc.) se comporte de manera idéntica a su función original de la `libc` o cumpla estrictamente con las especificaciones del proyecto.
 
 ---
 
