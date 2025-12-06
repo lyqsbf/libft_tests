@@ -69,6 +69,7 @@ cc nombre_del_test.c -L. -lft -o test_runner
 ```
 
 **⚠️ Sustituye** `nombre_del_test.c` por el nombre del archivo de prueba que desees ejecutar (ej: `test_atoi.c`).
+
 ---
 
 ## 💡 Explicación del Enlazado
